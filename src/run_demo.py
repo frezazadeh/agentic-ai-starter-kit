@@ -2,9 +2,8 @@ from __future__ import annotations
 
 from rich import print as rprint  # optional; remove if you don't want rich formatting
 
-from config import load_settings, make_client
-from agent.core import Agent
-
+from src.config import load_settings, make_client
+from src.agent.core import Agent
 
 def main() -> None:
     settings = load_settings()
