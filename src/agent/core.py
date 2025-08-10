@@ -6,9 +6,8 @@ from typing import Any, Callable, Dict, List, Optional
 from openai import OpenAI
 from openai.types.chat import ChatCompletionMessageParam
 
-from ..config import Settings
-from ..tools.math_tool import MathRequest, evaluate_math
-
+from src.config import Settings
+from src.tools.math_tool import MathRequest, evaluate_math
 
 ToolFn = Callable[[Dict[str, Any]], str]
 
